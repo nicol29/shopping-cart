@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@300;400;700&display=swap');
 
 body {
   margin: 0;
@@ -20,6 +20,7 @@ header ul {
   gap: 20px;
   font-family: Poppins, 'Courier New', Courier, monospace;
   font-size: .9rem;
+  font-weight: 300;
 }
 
 header ul li:hover,
@@ -44,7 +45,7 @@ header ul li:hover,
 
 .hero {
   position: absolute;
-  top: 150px;
+  top: 30%;
   width: 100%;
   padding-left: 30px;
   font-family: Poppins, 'Courier New', Courier, monospace;
@@ -53,6 +54,7 @@ header ul li:hover,
 
 .hero p {
   color: white;
+  font-weight: 400;
 }
 
 .hero h1 {
@@ -72,4 +74,71 @@ header ul li:hover,
   font-size: 1rem;
   border: none;
   border-radius: 10px;
+  background-color: #f96d00;
+  color: white;
+}
+
+footer {
+  height: 90px;
+  background-color: #222831;
+}
+
+.beats-section {
+  background-color: #3e444e;
+  padding: 50px
+
+}
+
+.card {
+  display: flex;
+  font-family: Poppins, 'Courier New', Courier, monospace;
+  color: white;
+  font-weight: 300;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.card :first-child {
+  display: flex;
+  gap: 20px;
+}
+
+.card img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card button {
+  height: 35px;
+  background-color: #f96d00;
+  font-family: Poppins, 'Courier New', Courier, monospace;
+  border-radius: 10px;
+  border: none;
+  margin-left: auto;
+}
+
+.beat-info p {
+  margin: 0;
+}
+
+.beat-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.price {
+  font-size: .8rem;
+  display: flex;
+  gap: 8px;
+  font-weight: 400;
+}
+
+.price :first-child {
+  color: #f96d00;
+  font-weight: bold;
 }
