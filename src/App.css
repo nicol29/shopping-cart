@@ -32,3 +32,44 @@ header ul li:hover,
   height: auto;
 }
 
+.home {
+  position: relative;
+  width: 100%;
+}
+
+.background-image {
+  max-width: 100%;
+  filter: grayscale(40%);
+}
+
+.hero {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  padding-left: 30px;
+  font-family: Poppins, 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.hero p {
+  color: white;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.store {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.store button {
+  width: 100px;
+  height: 50px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+}
