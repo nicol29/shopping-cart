@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins&display=swap');
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #222831;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  margin-right: 20px;
+  list-style: none;
+  display: flex;
+  color: white;
+  gap: 20px;
+  font-family: Poppins, 'Courier New', Courier, monospace;
+  font-size: .9rem;
+}
+
+header ul li:hover,
+.logo:hover {
+  cursor: pointer;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+}
+
