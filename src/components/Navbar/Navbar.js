@@ -1,16 +1,27 @@
+import { Outlet, Link } from 'react-router-dom';
+
 function Taskbar () {
   return (
-    <header>
+    <>
+      <header>
       <img
         className='logo' 
         alt='Website logo' 
         src={require('../../images/sound-wave.png')}
       />
       <ul>
-        <li>Home</li>
-        <li>Store</li>
+        <li>
+          <Link to='/'>Home</Link> 
+        </li>
+        <li>
+          <Link to='/store'>Store</Link>
+        </li>
+        <li><img className='basket' src={require('../../images/shopping-outline-custom.png')} alt='basket'/></li>
       </ul>
-    </header>
+      </header>
+      
+      <Outlet />
+    </>
   )
 }
 

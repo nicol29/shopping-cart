@@ -1,14 +1,10 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home/Home';
-import Store from './components/Store/Store';
+import BeatsStore from './components/BeatsStore/BeatsStore';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      {/* <Home /> */}
-      <Store />
+      <BeatsStore />
     </div>
   );
 }

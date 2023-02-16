@@ -9,24 +9,28 @@ function Store () {
         price={'30.00'}
         bpm={'140bpm'}
       />
+      <hr></hr>
       <Card 
         image={require('../../images/central-cee.jpeg')}
         title={'Central Cee type beat "Let Go"'}
         price={'45.00'}
         bpm={'143bpm'}
       />
+      <hr></hr>
       <Card 
         image={require('../../images/digga-d.jpeg')}
         title={'Digga D type beat "Mercy"'}
         price={'35.00'}
         bpm={'144bpm'}
       />
+      <hr></hr>
       <Card 
         image={require('../../images/fivio-foreign.jpeg')}
         title={'Fivio Foreign type beat "Holy"'}
         price={'50.00'}
         bpm={'140bpm'}
       />
+      <hr></hr>
       <Card 
         image={require('../../images/sheff-g.jpeg')}
         title={'Sheff G type beat "Outside"'}

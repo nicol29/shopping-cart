@@ -24,7 +24,8 @@ header ul {
 }
 
 header ul li:hover,
-.logo:hover {
+.logo:hover
+.basket:hover {
   cursor: pointer;
 }
 
@@ -95,7 +96,7 @@ footer {
   color: white;
   font-weight: 300;
   align-items: center;
-  margin-top: 30px;
+  margin: 15px 0px 15px 0px;
 }
 
 .card :first-child {
@@ -107,7 +108,7 @@ footer {
   width: 75px;
   height: 75px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -132,7 +133,7 @@ footer {
 }
 
 .price {
-  font-size: .8rem;
+  font-size: .75rem;
   display: flex;
   gap: 8px;
   font-weight: 400;
@@ -141,4 +142,19 @@ footer {
 .price :first-child {
   color: #f96d00;
   font-weight: bold;
+}
+
+hr {
+  border: none;
+  background-color: white;
+  height: .5px
+}
+
+.basket {
+  height: 16px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
 }
