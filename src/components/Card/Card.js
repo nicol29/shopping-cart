@@ -11,8 +11,8 @@ function Card (props) {
           </div>
         </div>
       </div>
-      <div className="checkout">
-        <input></input>
+      <div className="checkout" data-item={props.index}>
+        <input onChange={props.changeAmount} value={props.amount}></input>
         <button onClick={props.addItemToCart}>${props.price}</button>
       </div>
     </div>

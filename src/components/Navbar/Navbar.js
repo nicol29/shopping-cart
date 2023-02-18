@@ -2,7 +2,7 @@ import { Outlet, Link } from 'react-router-dom';
 import { useState } from 'react';
 import Basket from '../Basket/Basket';
 
-function Navbar () {
+function Navbar (props) {
   const [modal, setModal] = useState(false);
 
   function enableDisableShoppingCart () {
@@ -34,10 +34,10 @@ function Navbar () {
 
       {modal && (
         <Basket 
-          closeModal = {enableDisableShoppingCart}
+          closeModal={enableDisableShoppingCart}
+          itemsInCart={props.itemsInCart}
         />
       )}
-      {/* {props.basket.length > 0 ? <div>lol</div> : null} */}
     </>
   )
 }

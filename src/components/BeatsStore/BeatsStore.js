@@ -45,22 +45,36 @@ function BeatsStore () {
     }
   ]
 
-  const [shoppingCart, setShoppingCart] = useState({});
+  const [shoppingCart, setShoppingCart] = useState([]);
+
+  const [amount, setAmount] = useState('');
 
   function displayCartItems () {
 
   }
 
+  function changeAmount (event) {
+    setAmount(event.target.value);
+  }
+
   function addItemToCart (event) {
-    console.log(event.target.parentNode.parentNode);
+    const itemToAdd = event.target.parentNode.getAttribute('data-item');
+
+    setShoppingCart([ ...shoppingCart, beats[itemToAdd]]);
   }
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Navbar />}>
+        <Route path='/' element={<Navbar itemsInCart={shoppingCart}/>}>
           <Route index element={<Home />} />
-          <Route path='store' element={<Store beats={beats} addItemToCart={addItemToCart}/>} />
+          <Route path='store' element={<Store 
+            beats={beats} 
+            addItemToCart={addItemToCart} 
+            changeAmount={changeAmount}
+            amount={amount}
+            />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>

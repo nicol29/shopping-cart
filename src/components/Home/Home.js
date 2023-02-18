@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Home () {
   return (
     <div className="home">
@@ -14,7 +16,9 @@ function Home () {
           <p>
             #1 Marketplace to buy & sell beats
           </p>
-          <button>Store</button>
+          <Link to='/store'>
+            <button>Store</button>
+          </Link>
         </div>
       </div>
     </div>
