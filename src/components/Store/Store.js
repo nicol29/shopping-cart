@@ -1,42 +1,19 @@
 import Card from "../Card/Card";
 
-function Store () {
+function Store (props) {
+  let cards = props.beats.map((element) => (
+    <Card 
+      image={element.image}
+      title={element.title}
+      price={element.price}
+      bpm={element.bpm}
+      addItemToCart={element.addItemToCart}
+    />
+  ))
+
   return (
     <div className="beats-section">
-      <Card 
-        image={require('../../images/pop-smoke1.jpeg')}
-        title={'Pop-Smoke type beat "Switch"'}
-        price={'30.00'}
-        bpm={'140bpm'}
-      />
-      <hr></hr>
-      <Card 
-        image={require('../../images/central-cee.jpeg')}
-        title={'Central Cee type beat "Let Go"'}
-        price={'45.00'}
-        bpm={'143bpm'}
-      />
-      <hr></hr>
-      <Card 
-        image={require('../../images/digga-d.jpeg')}
-        title={'Digga D type beat "Mercy"'}
-        price={'35.00'}
-        bpm={'144bpm'}
-      />
-      <hr></hr>
-      <Card 
-        image={require('../../images/fivio-foreign.jpeg')}
-        title={'Fivio Foreign type beat "Holy"'}
-        price={'50.00'}
-        bpm={'140bpm'}
-      />
-      <hr></hr>
-      <Card 
-        image={require('../../images/sheff-g.jpeg')}
-        title={'Sheff G type beat "Outside"'}
-        price={'30.00'}
-        bpm={'155bpm'}
-      />
+      {cards}
     </div>
   )
 }

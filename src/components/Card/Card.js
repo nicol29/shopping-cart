@@ -11,7 +11,10 @@ function Card (props) {
           </div>
         </div>
       </div>
-      <button>${props.price}</button>
+      <div className="checkout">
+        <input></input>
+        <button onClick={props.addItemToCart}>${props.price}</button>
+      </div>
     </div>
   )
 }

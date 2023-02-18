@@ -24,8 +24,10 @@ header ul {
 }
 
 header ul li:hover,
-.logo:hover
-.basket:hover {
+.logo:hover,
+.basket:hover,
+.close-cart:hover,
+button:hover {
   cursor: pointer;
 }
 
@@ -119,7 +121,8 @@ footer {
   font-family: Poppins, 'Courier New', Courier, monospace;
   border-radius: 10px;
   border: none;
-  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .beat-info p {
@@ -157,4 +160,44 @@ hr {
 header a {
   color: white;
   text-decoration: none;
+}
+
+.modal {
+  height: 600px;
+  width: 400px;
+  background-color: #222831;
+  border-radius: 15px;
+  color: white;
+  position: absolute;
+  top: calc(50% - 300px);
+  left: calc(50% - 200px);
+}
+
+.close-cart {
+  width: 25px;
+  position: relative;
+  left: 365px;
+  top: 10px
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content h1 {
+  margin-top: 0;
+}
+
+.checkout {
+  margin-left: auto;
+  display: flex;
+}
+
+.checkout input {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  height: 20px;
+  width: 15px;
 }
