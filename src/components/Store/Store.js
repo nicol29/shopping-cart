@@ -3,6 +3,7 @@ import Card from "../Card/Card";
 function Store (props) {
   let cards = props.beats.map((element) => (
     <Card 
+      key={element.key}
       image={element.image}
       title={element.title}
       price={element.price}
