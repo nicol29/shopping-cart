@@ -26,7 +26,12 @@ function Navbar (props) {
         <li>
           <Link to='/store'>Store</Link>
         </li>
-        <li><img className='basket' src={require('../../images/shopping-outline-custom.png')} alt='basket' onClick={enableDisableShoppingCart}/></li>
+        <li className='basket-icon-li'>
+          <img className='basket' src={require('../../images/shopping-outline-custom.png')} alt='basket' onClick={enableDisableShoppingCart}/>
+          {props.itemsInCart.length > 0 &&
+            <div className='alert-basket'></div>
+          }
+        </li>
       </ul>
       </header>
       

@@ -242,3 +242,17 @@ header a {
   margin-bottom: auto;
   font-size: 12px;
 }
+
+.basket-icon-li {
+  position: relative;
+}
+
+.alert-basket {
+  background-color: #f96d00;
+  height: 7px;
+  width: 7px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+}
