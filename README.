@@ -1,0 +1,4 @@
+Shopping Cart website made using React. Features use of hooks, props, router 
+and other feature. The store allows the user to navigate throught the 
+different pages the website has to offer via use of the navbar. The user can 
+browse the shop, add items to cart, view and delete items within the cart.

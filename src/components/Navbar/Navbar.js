@@ -41,6 +41,7 @@ function Navbar (props) {
         <Basket 
           closeModal={enableDisableShoppingCart}
           itemsInCart={props.itemsInCart}
+          removeCartItem={props.removeCartItem}
         />
       )}
     </>
